@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_3sdp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Bank Account Details"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_13ssp" />
+
+            <ImageView
+                android:id="@+id/bt_toggle_text"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="right"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_dropdown_arrow"
+                android:tint="@color/purple_500" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Bank Name"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_payment"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter Bank Name"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textViewPhonePayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Account Holder Name"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPhonePay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewPhonePayName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_payment"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter Account Holder Name"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textViewGooglePay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhonePay"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Account Type"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextGooglePay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_payment"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Select Account Type"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textViewIFSC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextGooglePay"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="IFSC Code"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextIFSC"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewIFSC"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_payment"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter IFSC Code"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textViewAccNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextIFSC"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Account Number"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAccNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewAccNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_payment"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter Account Number"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/textViewBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAccNumber"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Branch Name"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextBranch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewBranch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_payment"
+            android:drawableLeft="@drawable/ic_payment"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter Branch Name"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <Button
+            android:id="@+id/btnSubmitBankDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAlternateNumber"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

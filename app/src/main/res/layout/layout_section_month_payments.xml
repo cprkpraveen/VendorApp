@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_edit_text">
+
+    <TextView
+        android:id="@+id/textViewNov"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:background="@color/purple_500"
+        android:drawableRight="@drawable/ic_dropdown_arrow"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:text="November 2021"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+    <LinearLayout
+        android:id="@+id/llBillingPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNov"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlMonthBilling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Billing Period"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="November 2021"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBalanceBilling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Billing Date"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="December 2021"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlBalance"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#330F0A44" />
+
+        <LinearLayout
+            android:id="@+id/llPrices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlSwitch"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Per Blue Chilled Price"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="X Total Chilled Blue"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="(35 X 0)"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:text="₹ 0"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Per Blue Regular Price"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="X Total Regular Blue"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="(35 X 0)"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="end"
+                    android:text="₹ 0"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="#330F0A44" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCalculations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlSwitch"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Month Amount"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹ 0"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Balance Amount"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹ 0"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rlBalance"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="#330F0A44" />
+
+            <RelativeLayout
+                android:id="@+id/rlTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Total Amount"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="₹ 0"
+                    android:textColor="@color/purple_500"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rlTotal"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="#330F0A44" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/purple_500">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/btnBack"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="My Profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewAllCustomersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Mobile Number*"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewAllCustomersTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Mobile Number"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Full Name*"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Full Name"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewBrandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextName"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Brand Name"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewBrandName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_star_unfilled"
+                android:drawableLeft="@drawable/ic_star_unfilled"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Brand Name"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewBusinessAddess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextBrandName"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Business Address*"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextBusinessAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewBusinessAddess"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_location"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Business Address"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewBusinessPIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextBusinessAddress"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Business PIN Code*"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextBusinessPIN"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewBusinessPIN"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_pin"
+                android:drawableLeft="@drawable/ic_pin"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Business PIN Code"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewBusinessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextBusinessPIN"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Business Name*"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextBusinessName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewBusinessName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_star_unfilled"
+                android:drawableLeft="@drawable/ic_star_unfilled"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Business Name"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextBusinessName"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Email Address"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Email Address (Optional)"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/textViewAlternativePhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Alternative Mobile Number"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextAlternateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textViewAlternativePhoneNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Alternate Mobile Number"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                android:textColor="@color/purple_500" />
+
+            <Button
+                android:id="@+id/btnSubmit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextAlternateNumber"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:backgroundTint="@color/purple_500"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Submit" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/btnSubmit1"
+                android:background="#330F0A44" />
+
+            <include
+                android:id="@+id/includedSectionTaxDetails"
+                layout="@layout/layout_section_tax_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSubmit1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/includedSectionTaxDetails"
+                android:background="#330F0A44" />
+
+            <include
+                android:id="@+id/includedSectionBusinessSettings"
+                layout="@layout/layout_section_business_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/includedSectionTaxDetails" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/includedSectionBusinessSettings"
+                android:background="#330F0A44" />
+
+            <include
+                android:id="@+id/includedSectionBankDetails"
+                layout="@layout/layout_section_bank_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/includedSectionBusinessSettings" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/includedSectionBankDetails"
+                android:background="#330F0A44" />
+
+            <include
+                android:id="@+id/includedSectionPay"
+                layout="@layout/layout_section_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/includedSectionBankDetails" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CustomersPaymentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/purple_500">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnShare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_taste_for_health" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:id="@+id/textViewAllCustomersTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="All Customers"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewAllCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@id/textViewAllCustomersTitle"
+            android:fontFamily="@font/poppins_regular"
+            android:text="(6)"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/textViewAllCustomersTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/purple_500"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:textColor="@color/purple_500" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutOptions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/editText"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/background_edit_text"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_filter"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Filter"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/purple_500" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_dropdown_arrow"
+                android:drawableTint="@color/purple_500"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Select Option"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutOptions"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Brand Name"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutOptions"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Previous Month Due Credit"
+            android:textColor="@color/purple_500"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textViewCustomerName"
+            android:background="#330F0A44" />
+
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCustomerName"
+            android:layout_margin="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewCustomerPreview"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/img_dummy_bottle" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@id/imageViewCustomerPreview"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewName"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@id/imageViewCustomerPreview"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Mobile Number"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/imageViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="0 ₹"
+                android:textColor="@color/purple_500" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item1"
+            android:background="#330F0A44" />
+
+        <RelativeLayout
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item1"
+            android:layout_margin="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewCustomerPreview2"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/img_dummy_bottle" />
+
+            <TextView
+                android:id="@+id/textViewName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@id/imageViewCustomerPreview2"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewName2"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@id/imageViewCustomerPreview2"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="Mobile Number"
+                android:textColor="@color/purple_500"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/imageViewStatus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="0 ₹"
+                android:textColor="@color/purple_500" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item2"
+            android:background="#330F0A44" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
